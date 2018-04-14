@@ -21,13 +21,13 @@
       <Button fx:id="minus" mnemonicParsing="false" onAction="#minus" prefHeight="202.0" prefWidth="322.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Button fx:id="multify" mnemonicParsing="false" onAction="#multify" prefHeight="291.0" prefWidth="340.0" text="*" GridPane.columnIndex="2" GridPane.rowIndex="1" />
       <Button fx:id="divide" mnemonicParsing="false" onAction="#divide" prefHeight="288.0" prefWidth="439.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-      <TextField fx:id="first" onAction="#first_change" prefHeight="203.0" prefWidth="174.0" />
+      <TextField fx:id="first" prefHeight="203.0" prefWidth="174.0" />
       <TextField fx:id="three" onAction="#three_change" prefHeight="224.0" prefWidth="166.0" GridPane.columnIndex="2" />
       <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
       <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" />
-      <TextField fx:id="four" onAction="#four_change" prefHeight="212.0" prefWidth="160.0" GridPane.columnIndex="3" />
+      <TextField fx:id="four" prefHeight="212.0" prefWidth="160.0" text="=" GridPane.columnIndex="3" />
       <TextField fx:id="second" onAction="#second_change" prefHeight="157.0" prefWidth="144.0" GridPane.columnIndex="1" />
       <Button fx:id="equal" mnemonicParsing="false" onAction="#equal" prefHeight="251.0" prefWidth="306.0" text="=" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-      <TextField fx:id="five" onAction="#five_change" prefHeight="205.0" prefWidth="160.0" GridPane.columnIndex="4" />
+      <TextField fx:id="five" prefHeight="205.0" prefWidth="160.0" GridPane.columnIndex="4" />
    </children>
 </GridPane>
