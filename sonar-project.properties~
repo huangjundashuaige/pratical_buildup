@@ -1,0 +1,11 @@
+#required metadata
+sonar.projectKey=my_app
+sonar.projectName=my_app
+sonar.projectVersion=1.0
+sonar.sourceEncoding=UTF-8
+sonar.modules=java-module
+
+java-module.sonar.projectName=Java-Module
+java-module.sonar.language=java
+java-module.sonar.source=.
+java-module.sonar.projectBaseDir=my_app

@@ -59,14 +59,6 @@ public class controller {
 	{
 		second.setText("/");
 	}
-	@FXML
-	public void first_change(ActionEvent E)
-	{
-	}
-		@FXML
-	public void three_change(ActionEvent E)
-	{
-	}
     @FXML
     public void equal(ActionEvent E){
     	double a;
@@ -74,7 +66,7 @@ public class controller {
     	try
     	{
         a = Double.parseDouble(first.getText());
-        b = Double.parseDouble(three.getText());
+        b = Double.parseDouble(second.getText());
         }
         catch(Exception e)
         {

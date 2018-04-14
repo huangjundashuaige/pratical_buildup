@@ -9,7 +9,7 @@ public class app extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/main_view.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/my_pane.fxml"));
         primaryStage.setTitle("Calculator");
         Scene scene = new Scene(root, 360.0, 270.0, Color.TRANSPARENT);
         //scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
