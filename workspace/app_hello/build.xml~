@@ -1,0 +1,30 @@
+<project name="hello world" default="test" basedir=".">
+	<description>
+		this is a simple hello world program to test ant and junit plug-in
+	</description>
+<property name="source" location="source"/>
+<property name="classes" location="classes"/>
+
+<target name="init">
+	<mkdir dir="${classes}"/>
+</target>
+
+<target name="compile" depends="init" description="compile java file">
+	<javac srcdir="${source}" destdir="${classes}"/>
+</target>
+
+<target name="run" depends="compile">
+	<java classname="hello_world" fork="yes" dir="./classes">
+	</java>
+</target>
+
+<target name="test" depends="run">
+	<junit printsummary="true">
+	<classpath>
+	<path refid="classes"/>
+	<pathelement location="/opt/resources/junit-4.9.jar"/>
+	</classpath>
+		<test name="test_hello_world"/>
+	</junit>
+</target>
+</project>

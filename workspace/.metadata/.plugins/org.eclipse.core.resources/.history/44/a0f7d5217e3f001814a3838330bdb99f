@@ -1,0 +1,13 @@
+import org.junit.Test;
+import org.junit.Assert.*;
+public class calculate_test {
+	Test calculation = new Test();
+	int sum = calculation.sum(1,2);
+	int test_sum=3;
+	@Test
+	pubilc void test()
+	{
+		System.out.println(sum+" "+test_sum);
+		assertEqual(sum.test_sum);
+	}
+}

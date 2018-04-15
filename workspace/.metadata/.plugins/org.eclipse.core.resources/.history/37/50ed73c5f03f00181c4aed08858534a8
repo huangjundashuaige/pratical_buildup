@@ -1,0 +1,13 @@
+import org.junit.Assert;
+import org.junit.Test;
+
+public class test {
+	String s=hello_world.output();
+	String s1="hello world!";
+	@Test
+	public void test()
+	{
+		System.out.println(s1+"\n"+s1);
+		Assert.assertEquals(s, s1);
+	}
+}

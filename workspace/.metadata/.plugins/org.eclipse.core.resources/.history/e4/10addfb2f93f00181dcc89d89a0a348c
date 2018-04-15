@@ -1,0 +1,17 @@
+package level1;
+import org.junit.Assert;
+
+import org.junit.Test;
+
+import level0.controller;
+
+public class controller_test {
+	controller new_controller = new controller();
+//	new_controller.first.setText("1");
+	@Test
+	public void test_multify()
+	{
+		
+		Assert.assertEquals("1", "1");
+	}
+}

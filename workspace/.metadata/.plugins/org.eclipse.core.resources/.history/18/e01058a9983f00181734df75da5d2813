@@ -1,0 +1,15 @@
+import org.junit.Test;
+import org.junit.Ignore;
+import static org.junit.Assert.*;
+
+public class test_hello_world {
+	String be_tested=hello_world.output();
+	
+	@Test
+	public void test()
+	{
+		System.out.println(be_tested+" "+hello_world.output());
+		assertEquals(be_tested,"hello world!");
+	}
+
+}
