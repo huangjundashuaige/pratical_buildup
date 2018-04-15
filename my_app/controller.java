@@ -10,10 +10,10 @@ import javafx.scene.control.TextField;
 public class controller {
 
     @FXML
-    Button plus;
+    public Button plus;
 
     @FXML
-    Button minus;
+    public Button minus;
 
     @FXML
     Button multify;
@@ -81,27 +81,30 @@ public class controller {
         	five.setText("null");
         	return;
         }
-        double result = 0;
+        double res = 0;
+	int flag=0;
         switch (second.getText()){
             case "+":
-                result = a + b;
+                res = a + b;
                 break;
             case "-":
-                result = a - b;
+                res = a - b;
                 break;
             case "×":
-                result = a * b;
+                res = a * b;
                 break;
-            case "÷":
-                if(b==0)
+            case "/":
+                if(b==0.0)
                 {
-                    five.setText("illegal");
+			flag=1;
+                	five.setText("illeagal");   
                 }
                 else
-                    result = a / b;
+                    res = a / b;
                 break;
         }
-        five.setText(""+result);
+	if(flag==0)
+        	five.setText(""+res);
     }
 
 
