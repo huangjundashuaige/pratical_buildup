@@ -7,5 +7,5 @@ sonar.modules=java-module
 
 java-module.sonar.projectName=Java-Module
 java-module.sonar.language=java
-java-module.sonar.source=.
+java-module.sonar.sources=.
 java-module.sonar.projectBaseDir=my_app

@@ -26,7 +26,7 @@ import info.gridworld.grid.Location;
  * This class runs a world that contains crab critters. <br />
  * This class is not tested on the AP CS A and AB exams.
  */
-public class RockHoundRunner
+public final class RockHoundRunner
 {
     public static void main(String[] args)
     {
@@ -46,4 +46,5 @@ public class RockHoundRunner
         world.add(new Location(7, 4), new RockHound());
         world.show();
     }
+    private RockHoundRunner(){}
 }
