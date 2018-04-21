@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="hello world/src"/>
+	<classpathentry kind="src" path="pratical_buildup/my_app"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/administrator/sonar/sonar-3.7.4/war/sonar-server/WEB-INF/lib/junit-4.10.jar"/>
+	<classpathentry kind="output" path="pratical_buildup/my_app"/>
+</classpath>

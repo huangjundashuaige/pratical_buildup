@@ -1,0 +1,16 @@
+
+import org.junit.Assert;
+
+import org.junit.Test;
+
+//import level0.controller;
+
+public class controller_test {
+	controller new_controller = new controller();
+	@Test
+	public void test_multify()
+	{
+		
+		Assert.assertEquals("1", "1");
+	}
+}

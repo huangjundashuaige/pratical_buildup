@@ -1,0 +1,12 @@
+import org.junit.Assert;
+import org.junit.Test;
+public class controller_test {
+	controller new_controller = new controller();
+	@Test
+	public void test_multify()
+	{
+		new_controller.first.setText("1");
+		
+		
+	}
+}
