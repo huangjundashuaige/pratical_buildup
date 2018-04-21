@@ -1,0 +1,30 @@
+<project name="hello world" default="test" basedir=".">
+	<description>
+		this is a simple hello world program to test ant and junit plug-in
+	</description>
+<property name="bin" location="bin"/>
+
+<target name="init">
+	<mkdir dir="${bin}"/>
+</target>
+
+<target name="compile" depends="init" description="compile java file">
+	<javac srcdir="." destdir="${bin}"/>
+</target>
+
+<target name="test" depends="run">
+	<junit printsummary="true">
+	<classpath>
+	<pathelement location="/opt/resources/junit-4.9.jar"/>
+	</classpath>
+		<test name="JumperTest"/>
+	</junit>
+</target>
+
+<target name="run" depends="compile">
+	<java classname="JumperRunner" fork="yes" dir="${bin}">
+	</java>
+</target>
+
+
+</project>
