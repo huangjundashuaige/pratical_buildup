@@ -38,12 +38,14 @@ public class RockHound extends Critter
     /**
      * Turns towards the new location as it moves.
      */
-    public void processActors(ArrayList<Actor> actors)
+    public void processActors(List<Actor> actors)
     {
         for (Actor a : actors)
         {
             if (a instanceof   Rock)
+            {
                 a.removeSelfFromGrid();
+            }
         }
     }
 }
